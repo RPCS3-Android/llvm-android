@@ -36,7 +36,7 @@ endif()
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/llvm-project/llvm ${CMAKE_CURRENT_BINARY_DIR}/llvm_build)
 set(LLVM_DIR "${CMAKE_CURRENT_BINARY_DIR}/llvm_build/lib/cmake/llvm/")
 
-find_package(LLVM 20.1 CONFIG)
+find_package(LLVM 19.1 CONFIG)
 if(NOT LLVM_FOUND)
     message(FATAL_ERROR "Couldn't build LLVM from the submodule. You might need to run `git submodule update --init`")
 endif()
